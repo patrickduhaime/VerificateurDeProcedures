@@ -26,7 +26,7 @@ namespace WindowsFormsApp2
         public bool IdIsDeclared(string id) => dictionary.ContainsKey(id) ? true : Erreur(2);
 
         //Vérifie si un identificateur ne fait pas plus de 8 caractères.
-        public bool IdIsNotOverEigth(string id) => id.Length < 9 ? true : Erreur(99);
+        public bool IdIsNotOverEigth(string id) => id.Length < 9 ? true : Erreur(4);
 
         //Vérifie qu'un id d'une expression n'est pas un réel si l'élément de gauche est un entier
         public bool IdHasValidType(string rightElement) => (leftElementType == "reel" || dictionary[rightElement] == "entier") ? true : Erreur(3);
@@ -50,6 +50,9 @@ namespace WindowsFormsApp2
                     break;
                 case 3:
                     Verificateur.instance.showMessage(" On ne peut pas affecter le résultat d’une expression réelle (type reel) à une variable de type entier ! Analyse sémantique Erreur 03");
+                    break;
+                case 4:
+                    Verificateur.instance.showMessage(" L'identificateur ne peut faire plus de 8 caractèeres ! Analyse sémantique Erreur 04");
                     break;
                 default:
                     Verificateur.instance.showMessage("Analyse sémantique Erreur");

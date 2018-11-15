@@ -29,9 +29,8 @@ namespace WindowsFormsApp2
             if (!firstId.StartsWith("ID"))
                 return Erreur(1);
 
-            ///////////////////////////////////////////////
             if (!analSem.IdIsNotOverEigth(analLex.GetList()[(int)Char.GetNumericValue(firstId[2])]))
-                return false;
+                return Erreur(7);
 
             //Analyse des déclarations et des instructions
             if (!Declarations() || !Instructions())
@@ -202,6 +201,9 @@ namespace WindowsFormsApp2
                     break;
                 case 6:
                     Verificateur.instance.showMessage("Une parenthèse est ouverte mais n'est pas fermée convenablement ! Analyse syntaxique Erreur 06");
+                    break;
+                case 7:
+                    Verificateur.instance.showMessage("L'identificateur ne peut faire plus de 8 caractèeres ! Analyse syntaxique Erreur 07");
                     break;
                 default:
                     Verificateur.instance.showMessage("Analyse syntaxique Erreur");
