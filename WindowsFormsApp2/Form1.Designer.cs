@@ -34,12 +34,14 @@
             this.textBoxResultats = new System.Windows.Forms.RichTextBox();
             this.labelPorcedure = new System.Windows.Forms.Label();
             this.labelResultats = new System.Windows.Forms.Label();
+            this.buttonReset = new System.Windows.Forms.Button();
             this.panelControls.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelControls
             // 
             this.panelControls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelControls.Controls.Add(this.buttonReset);
             this.panelControls.Controls.Add(this.buttonTest);
             this.panelControls.Location = new System.Drawing.Point(575, 21);
             this.panelControls.Name = "panelControls";
@@ -52,7 +54,7 @@
             this.buttonTest.Name = "buttonTest";
             this.buttonTest.Size = new System.Drawing.Size(161, 48);
             this.buttonTest.TabIndex = 2;
-            this.buttonTest.Text = "Tester la procedure";
+            this.buttonTest.Text = "Tester la chaine";
             this.buttonTest.UseVisualStyleBackColor = true;
             this.buttonTest.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -77,9 +79,9 @@
             this.labelPorcedure.AutoSize = true;
             this.labelPorcedure.Location = new System.Drawing.Point(12, 5);
             this.labelPorcedure.Name = "labelPorcedure";
-            this.labelPorcedure.Size = new System.Drawing.Size(96, 13);
+            this.labelPorcedure.Size = new System.Drawing.Size(80, 13);
             this.labelPorcedure.TabIndex = 4;
-            this.labelPorcedure.Text = "Procedure éditable";
+            this.labelPorcedure.Text = "Chaine éditable";
             // 
             // labelResultats
             // 
@@ -89,6 +91,16 @@
             this.labelResultats.Size = new System.Drawing.Size(81, 13);
             this.labelResultats.TabIndex = 5;
             this.labelResultats.Text = "Résultat du test";
+            // 
+            // buttonReset
+            // 
+            this.buttonReset.Location = new System.Drawing.Point(19, 122);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(161, 48);
+            this.buttonReset.TabIndex = 3;
+            this.buttonReset.Text = "Réinitialiser la chaine";
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Verificateur
             // 
@@ -116,6 +128,7 @@
         private System.Windows.Forms.RichTextBox textBoxResultats;
         private System.Windows.Forms.Label labelPorcedure;
         private System.Windows.Forms.Label labelResultats;
+        private System.Windows.Forms.Button buttonReset;
     }
 }
 

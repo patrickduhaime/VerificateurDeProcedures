@@ -35,5 +35,11 @@ namespace WindowsFormsApp2
             File.WriteAllText("file.txt", textBoxProcedure.Text);
             Analyseur.Run();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            textBoxProcedure.Text = "Procedure identi1 declare id2 : entier ;declare id3 : reel ; id2 = (3 + 2) * 3 ; id3 = id2 / (4 - 5) Fin_Procedure identi1";
+            textBoxResultats.Clear();
+        }
     }
 }
