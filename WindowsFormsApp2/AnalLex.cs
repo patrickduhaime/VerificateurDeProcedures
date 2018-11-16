@@ -122,5 +122,14 @@ namespace WindowsFormsApp2
                 Type = Char.ToString();
         }
 
+        //Vérifie si un identificateur ne fait pas plus de 8 caractères.
+        public bool IdIsUnderNine() => Lexeme.Length < 9 ? true : Erreur();
+
+        //Traitement de l’erreur
+        private bool Erreur()
+        {
+            Verificateur.instance.showMessage(" L'identificateur ne peut faire plus de 8 caractères ! Analyse lexicale Erreur 01");
+            return false;
+        }
     }
 }

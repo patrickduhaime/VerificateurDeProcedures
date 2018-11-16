@@ -18,3 +18,13 @@ C:\Users\card\source\repos\WindowsFormsApp2\VerificateurDeProcedures\WindowsForm
 C:\Users\card\source\repos\WindowsFormsApp2\VerificateurDeProcedures\WindowsFormsApp2\obj\Debug\VerificateurDeProcedures.csproj.CoreCompileInputs.cache
 C:\Users\card\source\repos\WindowsFormsApp2\VerificateurDeProcedures\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\card\source\repos\WindowsFormsApp2\VerificateurDeProcedures\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\VerificateurDeProcedures.csprojAssemblyReference.cache
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Verificateur.resources
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\VerificateurDeProcedures.csproj.GenerateResource.cache
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\VerificateurDeProcedures.csproj.CoreCompileInputs.cache
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Hyacinthe Brochu\Desktop\VerificateurDeProcedures-master\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

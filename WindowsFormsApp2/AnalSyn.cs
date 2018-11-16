@@ -29,8 +29,9 @@ namespace WindowsFormsApp2
             if (!firstId.StartsWith("ID"))
                 return Erreur(1);
 
-            if (!analSem.IdIsNotOverEigth(analLex.GetList()[(int)Char.GetNumericValue(firstId[2])]))
-                return Erreur(7);
+            //Vérifie que la longueur de l'ID de la procédure est inférieure à 9.
+            if (!analLex.IdIsUnderNine())
+                return false;
 
             //Analyse des déclarations et des instructions
             if (!Declarations() || !Instructions())
@@ -65,6 +66,10 @@ namespace WindowsFormsApp2
             string id = Next();
             if (!id.StartsWith("ID") || Next() != ":")
                 return Erreur(2);
+
+            //Vérifie que la longueur de l'ID déclaré est inférieure à 9.
+            if (!analLex.IdIsUnderNine())
+                return false;
 
             string type = Next();
             if ((type != "entier" && type != "reel") || Next() != ";")
@@ -167,9 +172,6 @@ namespace WindowsFormsApp2
 
             //Analyse sémantique : Vérifie que l'ID est déclaré et que l'ID n'est pas un réel si le résultat attendu est un entier.
             if (facteur.StartsWith("ID") && (!analSem.IdIsDeclared(facteur) || !analSem.IdHasValidType(facteur)))
-                return false;
-
-            if (facteur.StartsWith("ID") && !analSem.IdIsNotOverEigth(analLex.GetList()[(int)Char.GetNumericValue(facteur[2])]))
                 return false;
 
             //Analyse sémantique : Vérifie que le nombre n'est pas un réel si le résultat attendu est un entier.
